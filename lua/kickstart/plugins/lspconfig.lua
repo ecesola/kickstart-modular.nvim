@@ -138,6 +138,24 @@ return {
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
+        -- pylyzer = {},
+        -- pyre = {},
+        pylsp = {
+          cmd = { 'pylsp' },
+          filetypes = { 'python' },
+          single_file_support = true,
+          -- capabilities = {},
+          settings = {
+            pylsp = {
+              plugins = {
+                pycodestyle = {
+                  ignore = { 'W391' },
+                  maxLineLength = 100,
+                },
+              },
+            },
+          },
+        },
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --

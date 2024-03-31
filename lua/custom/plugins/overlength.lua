@@ -6,7 +6,7 @@ return {
   config = function()
     require('overlength').setup {
       -- Overlength highlighting enabled by default
-      enabled = true,
+      enabled = false,
 
       -- Colors for OverLength highlight group
       colors = {
