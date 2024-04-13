@@ -7,6 +7,8 @@ return {
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
+      numhl = true,
+      max_file_length = 10000,
       signs = {
         add = { text = '+' },
         change = { text = '~' },
